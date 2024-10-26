@@ -102,12 +102,25 @@ def main():
                 full_basket.insert_basket(sel_pantry, new_data )
 
 
-            case "5":
-                print("basket 5")
-            case "6":
-                print("basket 6")
+            case "5" | "update_basket":
+                #update_pantry_basket(basket_name, new_data)
+                # todo work on this latter it isn't urgent.
+                # Idk how the UX would be. [basket_name] -> list value -> pick which value wants to be changed -> new value
+                print("What is the name of the basket you want to update?")
+                full_pantry.list_all_baskets()
+                sel_pantry = input("Name: ").lower()
+
+                
+            case "6" | "delete_pantry_basket":
+                # list baskets:
+                print("What is the name of the basket you want to delete?")
+                full_pantry.list_all_baskets()
+                sel_pantry = input("Name: ").lower()
+                full_basket.delete_pantry_basket(sel_pantry)
+                print("Basket deleted")
+                
             case "7":
-                print("basket 7")
+                print("test")
 
             case _:
                 print("Invalid command.")
