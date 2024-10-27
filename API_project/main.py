@@ -4,6 +4,7 @@ import sys, os, json
 import interactions.full_pantry as full_pantry
 import interactions.full_basket as full_basket
 
+# todo make variable that if true it will make a continuos async funciton that constantly counts to 20 days and freshes the api. It will also refresh once initiated.
 
 #* START OF THE CLI CODE:
 def main():
