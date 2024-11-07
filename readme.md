@@ -22,11 +22,15 @@ Make a piece of Software that does the following:
     This api will store all of the "Base" Variables of many companies. 
         Incase you haven't see ForPass.js base variables are variables used in Formula based passwords that don't change. 
     > So in microsoft it would include the word microsoft, blue as their main color, the windows squares as their logo, and so on.
-2. Self Updating: Every X ammount of time the software will consult a LLM and other methods, if the values of this company have changed.
-3. Back up json to multiple places, including github.
-4. request feed back from users, if multiple users alert that a value is wrong, it will store the alert, so it is prioritized to be inspected
+2. Place rate limiters so this doesn't happen:
+![image](https://github.com/user-attachments/assets/9e4f6290-8ec3-45ed-b880-45e760b75d9b)
+
+3. Self Updating: Every X ammount of time the software will consult a LLM and other methods, if the values of this company have changed.
+4. Back up json to multiple places, including github.
+5. request feed back from users, if multiple users alert that a value is wrong, it will store the alert, so it is prioritized to be inspected
 
 - later on it will integrate with for pass js. a JavaScript API from the client side will call python to get the values and make reports. (but not edit)
+
 
 
 ## Context
