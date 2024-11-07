@@ -17,11 +17,12 @@ def main():
     These are the options:
     Pantry interactions:
     [1] get_pantry_data
+    [1.1] get_pantry_data (formated)
     [2] update_pantry_account
     Basket Interactions:
     [3] get_pantry_data
     [4] make_pantry_insert
-    [5] 
+    [5] Update basket
     [6] 
     [7]
     """)
@@ -42,7 +43,11 @@ def main():
                 
                 print(full_pantry.get_pantry_data())
                 
-
+            case "get_pantry_data_format" | "1.1":
+                
+                
+                print(full_pantry.get_pantry_data_format())
+                
             case "get_pantry_data" | "2":
                 # todo allow the user to escape this option incase they accessed accidentaly
                 print("We would recomend not changing this. for now it break many things")
@@ -121,6 +126,7 @@ def main():
                 print("Basket deleted")
                 
             case "7":
+
                 print("test")
 
             case _:
